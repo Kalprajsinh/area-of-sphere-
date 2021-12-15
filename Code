@@ -1,0 +1,49 @@
+#include<stdlib.h>  
+
+void main ()  
+{  
+    int z,h,b;
+    float a,x,r,A,k,K;  
+    
+    printf("\n1.for area of triangle");
+    printf("\n2.for area of circle");
+    printf("\n3.for area of square");
+    printf("\n");
+    scanf("%d",&z);
+    switch(z)  
+    {  
+        case 1 :   
+         printf("\narea of triangle formula =0.5 * h *b");
+         printf("\n\nenter value of Height-");
+         scanf("%d",&h);
+    
+         printf("\nenter value of Base-");
+         scanf("%d",&b);
+
+         z=0.5*h*b;
+
+         printf("\nanswer=0.5 * %d * %d=%d ",h,b,z);
+        break;  
+        case 2:    
+       
+       printf("\narea of circle formula = πr²");
+       printf("\nEnter the radius of circle : ");
+       scanf("%f",&r); 
+       A= 3.14*r*r; 
+       printf("\nthe area of the circle is %.2f\n",A);
+  
+        break;  
+        case 3 :   
+        printf("\narea of square formula = l²");
+        printf("\nenter length of one side : ");
+        scanf("%f",&k);  
+        K=k*k;
+        printf("\narea of square = %.2f",K);
+        break;  
+    
+        default:   
+        printf("please enter valid choice");      
+    }  
+   
+    
+} 
